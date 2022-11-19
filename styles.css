@@ -1,0 +1,266 @@
+body {
+  /* background-color: rgb(8, 2, 27); */
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/backgroundBody.png);
+}
+
+#app {
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 650px;
+  border: 2.5px solid rgb(75, 75, 75);
+  box-shadow: 0px 0px 30px 10px rgba(32, 32, 32, 0.75);
+}
+
+.background {
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  /* margin-top: 50px; */
+}
+
+#logoWhiteBox {
+  width: 40%;
+  margin-left: 100px;
+}
+
+#life {
+  height: 100px;
+  margin-left: 100px;
+}
+#whiteBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.containerScorePokeball {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.containerPokeball {
+  width: 30%;
+  height: 45px;
+  padding-top: 40px;
+}
+
+.pokeballRemain {
+  height: 45px;
+}
+#pokeballRemainText {
+  font-family: VT323;
+  margin: 10px;
+  display: inline;
+  font-size: 2.5em;
+  color: rgb(19, 24, 22);
+  text-shadow: 2px 2px #23a856;
+}
+
+#scoreImg {
+  height: 45px;
+  padding-top: 40px;
+}
+
+#scoreText {
+  font-family: VT323;
+  margin: 10px;
+  display: inline;
+  font-size: 2.5em;
+  color: rgb(19, 24, 22);
+  text-shadow: 2px 2px #23a856;
+}
+
+#pokemon {
+  height: 70px;
+}
+
+#candy {
+  height: 70px;
+}
+
+#rocket {
+  height: 70px;
+}
+
+#stopMusic {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
+  opacity: 50%;
+  font-size: 16px;
+  z-index: 500;
+}
+
+#stopmusic:hover {
+  background-color: rgb(91, 92, 92);
+  cursor: pointer;
+}
+
+#startMenu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255, 0.5);
+  top: 0px;
+  z-index: 11;
+}
+#endMenu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255, 0.5);
+  top: 0px;
+  z-index: 200;
+}
+
+#keyboardDiv {
+  display: flex;
+  justify-content: space-around;
+  bottom: 150px;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+}
+#menuKeyDiv {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+}
+#footerMenu {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  background-color: rgb(11, 59, 41, 0.5);
+  bottom: 0px;
+  width: 100%;
+  height: 150px;
+}
+
+#footerMenu p:first-child {
+  margin-top: 60px;
+  margin-right: 80px;
+}
+
+#startButton,
+#resetButton {
+  font-size: 3.5em;
+  color: rgb(19, 24, 22);
+  text-shadow: 2px 2px #23a856;
+  font-family: VT323;
+  height: 100px;
+  width: 400px;
+  border-radius: 87px;
+  margin-top: 150px;
+  background: linear-gradient(90deg, #23a856, #44dd7e, #97e2b4, #074b21);
+  /* #23a856 0%, rgba(168, 95, 35, 0) 50.13%) */
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#startButton:hover,
+#resetButton:hover {
+  cursor: pointer;
+  font-size: 4.5em;
+}
+
+#highScore {
+  font-size: 2em;
+  color: rgb(19, 24, 22);
+  text-shadow: 2px 2px #23a856;
+  font-family: VT323;
+  position: absolute;
+  top: -70;
+  left: 0px;
+}
+
+#pokemonCatched {
+  font-size: 2em;
+  color: rgb(19, 24, 22);
+  text-shadow: 2px 2px #23a856;
+  font-family: VT323;
+  position: absolute;
+  top: -70;
+  left: 1000px;
+}
+
+#textFooter {
+  font-family: VT323;
+  color: rgb(19, 24, 22);
+  text-shadow: 2px 2px #23a856;
+  font-size: 2em;
+  /* border: 5px solid red; */
+  max-width: 200px;
+  text-align: center;
+}
+
+#keys {
+  height: 80px;
+}
+
+#keysText {
+  font-family: VT323;
+  color: rgb(19, 24, 22);
+  text-shadow: 2px 2px #23a856;
+  font-size: 2em;
+}
+
+#pokemonWorld {
+  top: -60px;
+  position: absolute;
+  font-family: VT323;
+  color: rgb(19, 24, 22);
+  text-shadow: 2px 2px #23a856;
+  font-size: 5em;
+}
+
+#scoreEnd,
+#newHighScore,
+#pokemonCatchEnd {
+  position: absolute;
+  font-family: VT323;
+  color: rgb(19, 24, 22);
+  text-shadow: 2px 2px #23a856;
+  font-size: 4em;
+  bottom: 200px;
+}
+
+#newHighScore {
+  font-size: 3em;
+  bottom: 150px;
+  animation: blink 0.3s linear infinite;
+}
+
+#pokemonCatchEnd {
+  bottom: 50px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
