@@ -14,3 +14,4 @@ This is a small HTML, CSS, and Javascript game. Using keyboard keys, you must ca
 <br>
 <p align="center"><img src="./images/pokemon1.png"></p>
 <p align="center"><img src="./images/pokemon3.png"></p>
+<p align="center"><img src="./images/gameplay.gif"></p>
